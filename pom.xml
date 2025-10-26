@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- 模型版本（固定为 4.0.0） -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 项目信息 -->
+    <groupId>com.netty-study</groupId>       <!-- 组织标识，一般为包名 -->
+    <artifactId>Netty-Study</artifactId> <!-- 项目标识 -->
+    <version>1.0.0</version>             <!-- 项目版本 -->
+    <packaging>pom</packaging>           <!-- 打包类型：jar / war / pom -->
+
+
+    <!-- 属性定义（方便统一管理版本号等） -->
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <kotlin.version>1.4.10</kotlin.version>
+    </properties>
+
+    <!-- 依赖项 -->
+    <dependencyManagement>
+
+    </dependencyManagement>
+
+
+    <modules>
+        <module>netty-base</module>
+    </modules>
+
+    <!-- 构建配置 -->
+    <build>
+        <plugins>
+            <!-- Java 编译插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- 打包为可执行 jar（可选） -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>come.netty.base.component.Channel</mainClass> <!-- 主类入口 -->
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
