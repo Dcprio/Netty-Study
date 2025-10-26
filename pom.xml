@@ -25,6 +25,13 @@
 
     <!-- 依赖项 -->
     <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>4.1.31.Final</version>
+            </dependency>
+        </dependencies>
 
     </dependencyManagement>
 
