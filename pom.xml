@@ -56,7 +56,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>come.netty.base.component.Channel</mainClass> <!-- 主类入口 -->
+                            <mainClass>come.netty.base.component.Main</mainClass> <!-- 主类入口 -->
                         </manifest>
                     </archive>
                 </configuration>
