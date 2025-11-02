@@ -1,0 +1,10 @@
+Summary
+In this chapter you set up your development environment and built and ran your first Netty client and server.
+Although this is a simple application, it will scale to several thousand concurrent connections—many more messages per second than a plain vanilla socket-based Java application would be able to handle.
+
+In the following chapters, you’ll see many more examples of how Netty simplifies scalability and concurrency.
+We’ll also go deeper into Netty’s support for the architectural principle of separation of concerns.
+By providing the right abstractions for decoupling business logic from networking logic, Netty makes it easy to keep pace with rapidly evolving requirements without jeopardizing system stability.
+
+In the next chapter, we’ll provide an overview of Netty’s architecture.
+This will give you the context for the in-depth and comprehensive study of Netty’s internals that will follow in subsequent chapters.

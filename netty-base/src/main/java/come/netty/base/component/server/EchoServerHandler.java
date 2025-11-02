@@ -1,4 +1,4 @@
-package come.netty.base.component;
+package come.netty.base.component.server;
 
 
 import io.netty.buffer.ByteBuf;
